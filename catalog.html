@@ -6,25 +6,63 @@
   </head>
 
   <body>
-  	<header>
-  	  <img src="">?
-  	  <nav class="nav">
-  	  	<button class="nav__toggle" type="button"></button>
+  	<header class="page-header">
+  	  <a class="page-header__logo">
+  	  	<img src="" width="" height="" alt="">?
+  	  </a>
+  	  <nav class="main-nav">
+  		  <button class="main-nav__toggle" type="button">
+  		  	<span class="visually-hidden">Закрыть меню</span>
+  		  </button>
+  		  <div class="main-nav__wrapper">
+  		    <ul class="main-nav__list site-list">
+  		      <li class="site-list__item">
+  		      	<a href="">О сервисе</a>
+  		      </li>
+  		      <li class="site-list__item">
+  		      	<a href="form.html">Направления</a>
+  		      </li> 
+  		      <li class="site-list__item">
+  		      	<a href="catalog.html">Попутчики</a>
+  		      </li> 
+            </ul>
+  		    <ul class="main-nav__list user-list">
+  		      <li class="user-list__item">
+  		      	<a href="login.html" class="user-list__login js-login">Авторизация</a>
+  		      </li>
+            </ul>
+  		  </div>
   	  </nav>
-      <h1 class="main-nav__title">Попутчики</h1>
+  	  <div class="page-header__contacts contacts">
+  	  	<a class="contacts__tel" href="tel:88005558628">8 800 555-86-28</a>
+  	  	<p class="contacts__mail">mail@htmlacademy.ru</p>
+  	  </div>
+  	  <div class="page-header__social social">
+  	  	<ul class="social__list">
+  	  	  <li class="social__item">
+  	  	  	<a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+  	  	  </li>
+  	  	  <li class="social__item">
+  	  	  	<a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+  	  	  </li>
+  	  	  <li class="social__item">
+  	  	  	<a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+  	  	  </li>
+  	    </ul>
+  	  </div>
   	</header>
 
   	<main>
   	  <section class="fellow-travelers">
   	  	<ul class="fellow-travelers__list">
-  	  	  <li class="fellow-travelers__item">
-  	  	  	<h3 class="fellow-travelers__name">Таня <br>Фирсова</h3>
-  	  	  	<img src="" class="fellow-travelers__avatar">
-  	  	  	<input class="fellow-travelers__like" type="checkbox" name="like" id="like" checked>
+  	  	  <li class="fellow-traveler">
+  	  	  	<h3 class="fellow-traveler__name">Таня <br>Фирсова</h3>
+  	  	  	<img src="" class="fellow-traveler__avatar">
+  	  	  	<input class="fellow-traveler__like" type="checkbox" name="like" id="like" checked>
   	  	  	<label for="like"></label>
-  	  	  	<p class="fellow-travelers__tag">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
-  	  	  	<div class="fellow-travelers__want">
-  	  	  	  <h4 class="fellow-travelers__title">хочет посетить:</h4>
+  	  	  	<p class="fellow-traveler_tag">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
+  	  	  	<div class="fellow-traveler__want">
+  	  	  	  <h4 class="fellow-traveler__title">хочет посетить:</h4>
   	  	  	  <ul class="wants-to-visit">
   	  	  	  	<li class="wants-to-visit__item">
   	  	  	  		<img src="" class="wants-to-visit__flag">
@@ -40,8 +78,8 @@
   	  	  	  	</li>
   	  	  	  </ul>
   	  	  	</div>
-  	  	  	<div class="fellow-travelers__transport">
-  	  	  	  <h4 class="fellow-travelers__title">транспорт:</h4>
+  	  	  	<div class="fellow-traveler__transport">
+  	  	  	  <h4 class="fellow-traveler__title">транспорт:</h4>
   	  	  	  <ul class="transport">
   	  	  	  	<li class="transport__item">
   	  	  	  	  	<input type="checkbox" name="plane" id="plane" checked disabled>
@@ -61,20 +99,20 @@
   	  	  	  	  </li>
   	  	  	  </ul>
   	  	  	</div>
-  	  	  	<div class="fellow-travelers__level">
-  	  	  	  <h4 class="fellow-travelers__title">левел:</h4>
+  	  	  	<div class="fellow-traveler__level">
+  	  	  	  <h4 class="fellow-traveler__title">левел:</h4>
   	  	  	  <img src="">
   	  	  	</div>
-  	  	  	<a href="#" class="fellow-travelers__button">Позвать!</a>
+  	  	  	<a href="#" class="fellow-traveler__button">Позвать!</a>
   	  	  </li>
-  	  	  <li class="fellow-travelers__item">
-  	  	  	<h3 class="fellow-travelers__name">Петя <br>Демин</h3>
-  	  	  	<img src="" class="fellow-travelers__avatar">
-  	  	  	<input class="fellow-travelers__like" type="checkbox" name="like" id="like" >
+  	  	  <li class="fellow-traveler__item">
+  	  	  	<h3 class="fellow-traveler__name">Петя <br>Демин</h3>
+  	  	  	<img src="" class="fellow-traveler__avatar">
+  	  	  	<input class="fellow-traveler__like" type="checkbox" name="like" id="like" >
   	  	  	<label for="like"></label>
-  	  	  	<p class="fellow-travelers__tag">#бургер #бар #футбол #концерт #крафт</p>
-  	  	  	<div class="fellow-travelers__want">
-  	  	  	  <h4 class="fellow-travelers__title">хочет посетить:</h4>
+  	  	  	<p class="fellow-traveler__tag">#бургер #бар #футбол #концерт #крафт</p>
+  	  	  	<div class="fellow-traveler__want">
+  	  	  	  <h4 class="fellow-traveler__title">хочет посетить:</h4>
   	  	  	  <ul class="wants-to-visit">
   	  	  	  	<li class="wants-to-visit__item">
   	  	  	  		<img src="" class="wants-to-visit__flag">
@@ -86,8 +124,8 @@
   	  	  	  	</li>
   	  	  	  </ul>
   	  	  	</div>
-  	  	  	<div class="fellow-travelers__transport">
-  	  	  	  <h4 class="fellow-travelers__title">транспорт:</h4>
+  	  	  	<div class="fellow-traveler__transport">
+  	  	  	  <h4 class="fellow-traveler__title">транспорт:</h4>
   	  	  	  <ul class="transport">
   	  	  	  	<li class="transport__item">
   	  	  	  	  	<input type="checkbox" name="plane" id="plane" checked disabled>
@@ -107,20 +145,20 @@
   	  	  	  	  </li>
   	  	  	  </ul>
   	  	  	</div>
-  	  	  	<div class="fellow-travelers__level">
-  	  	  	  <h4 class="fellow-travelers__title">левел:</h4>
+  	  	  	<div class="fellow-traveler__level">
+  	  	  	  <h4 class="fellow-traveler__title">левел:</h4>
   	  	  	  <img src="">
   	  	  	</div>
-  	  	  	<a href="#" class="fellow-travelers__button">Позвать!</a>
+  	  	  	<a href="#" class="fellow-traveler__button">Позвать!</a>
   	  	  </li>
-  	  	  <li class="fellow-travelers__item">
-  	  	  	<h3 class="fellow-travelers__name">Марк <br>Смолов</h3>
-  	  	  	<img src="" class="fellow-travelers__avatar">
-  	  	  	<input class="fellow-travelers__like" type="checkbox" name="like" id="like">
+  	  	  <li class="fellow-traveler__item">
+  	  	  	<h3 class="fellow-traveler__name">Марк <br>Смолов</h3>
+  	  	  	<img src="" class="fellow-traveler__avatar">
+  	  	  	<input class="fellow-traveler__like" type="checkbox" name="like" id="like">
   	  	  	<label for="like"></label>
-  	  	  	<p class="fellow-travelers__tag">#рэп #тату #хайпбист #кроссовки #суприм</p>
-  	  	  	<div class="fellow-travelers__want">
-  	  	  	  <h4 class="fellow-travelers__title">хочет посетить:</h4>
+  	  	  	<p class="fellow-traveler__tag">#рэп #тату #хайпбист #кроссовки #суприм</p>
+  	  	  	<div class="fellow-traveler__want">
+  	  	  	  <h4 class="fellow-traveler__title">хочет посетить:</h4>
   	  	  	  <ul class="wants-to-visit">
   	  	  	  	<li class="wants-to-visit__item">
   	  	  	  		<img src="" class="wants-to-visit__flag">
@@ -136,8 +174,8 @@
   	  	  	  	</li>
   	  	  	  </ul>
   	  	  	</div>
-  	  	  	<div class="fellow-travelers__transport">
-  	  	  	  <h4 class="fellow-travelers__title">транспорт:</h4>
+  	  	  	<div class="fellow-traveler__transport">
+  	  	  	  <h4 class="fellow-traveler__title">транспорт:</h4>
   	  	  	  <ul class="transport">
   	  	  	  	<li class="transport__item">
   	  	  	  	  	<input type="checkbox" name="plane" id="plane" checked disabled>
@@ -157,20 +195,20 @@
   	  	  	  	  </li>
   	  	  	  </ul>
   	  	  	</div>
-  	  	  	<div class="fellow-travelers__level">
-  	  	  	  <h4 class="fellow-travelers__title">левел:</h4>
+  	  	  	<div class="fellow-traveler__level">
+  	  	  	  <h4 class="fellow-traveler__title">левел:</h4>
   	  	  	  <img src="">
   	  	  	</div>
-  	  	  	<a href="#" class="fellow-travelers__button">Позвать!</a>
+  	  	  	<a href="#" class="fellow-traveler__button">Позвать!</a>
   	  	  </li>
-  	  	  <li class="fellow-travelers__item">
-  	  	  	<h3 class="fellow-travelers__name">Лариса <br>Роговая</h3>
-  	  	  	<img src="" class="fellow-travelers__avatar">
-  	  	  	<input class="fellow-travelers__like" type="checkbox" name="like" id="like">
+  	  	  <li class="fellow-traveler__item">
+  	  	  	<h3 class="fellow-traveler__name">Лариса <br>Роговая</h3>
+  	  	  	<img src="" class="fellow-traveler__avatar">
+  	  	  	<input class="fellow-traveler__like" type="checkbox" name="like" id="like">
   	  	  	<label for="like"></label>
-  	  	  	<p class="fellow-travelers__tag">#образование #карьера <br>#учеба #линкедин</p>
-  	  	  	<div class="fellow-travelers__want">
-  	  	  	  <h4 class="fellow-travelers__title">хочет посетить:</h4>
+  	  	  	<p class="fellow-traveler__tag">#образование #карьера <br>#учеба #линкедин</p>
+  	  	  	<div class="fellow-traveler__want">
+  	  	  	  <h4 class="fellow-traveler__title">хочет посетить:</h4>
   	  	  	  <ul class="wants-to-visit">
   	  	  	  	<li class="wants-to-visit__item">
   	  	  	  		<img src="" class="wants-to-visit__flag">
@@ -182,8 +220,8 @@
   	  	  	  	</li>
   	  	  	  </ul>
   	  	  	</div>
-  	  	  	<div class="fellow-travelers__transport">
-  	  	  	  <h4 class="fellow-travelers__title">транспорт:</h4>
+  	  	  	<div class="fellow-traveler__transport">
+  	  	  	  <h4 class="fellow-traveler__title">транспорт:</h4>
   	  	  	  <ul class="transport">
   	  	  	  	<li class="transport__item">
   	  	  	  	  	<input type="checkbox" name="plane" id="plane" checked disabled>
@@ -203,16 +241,16 @@
   	  	  	  	  </li>
   	  	  	  </ul>
   	  	  	</div>
-  	  	  	<div class="fellow-travelers__level">
-  	  	  	  <h4 class="fellow-travelers__title">левел:</h4>
+  	  	  	<div class="fellow-traveler__level">
+  	  	  	  <h4 class="fellow-traveler__title">левел:</h4>
   	  	  	  <img src="">
   	  	  	</div>
-  	  	  	<a href="#" class="fellow-travelers__button">Позвать!</a>
+  	  	  	<a href="#" class="fellow-traveler__button">Позвать!</a>
   	  	  </li>
   	  	</ul>
   	  	<a href="#">+ показать ещё</a>
-  	  	<button class="fellow-travelers__toggle--left">Лево</button>
-  	  	<button class="fellow-travelers__toggle--right">Право</button>
+  	  	<button class="fellow-traveler__toggle fellow-traveler__toggle--left">Лево</button>
+  	  	<button class="fellow-traveler__toggle fellow-traveler__toggle--right">Право</button>
   	  </section>
   	</main>
 
