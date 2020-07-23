@@ -5,14 +5,51 @@
     <title>Погнали:Направления</title>
   </head>
   <body>
-    <header>
-      <img src="">?
-      <nav class="nav">
-        <button class="main-nav__toggle" type="button"></button>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="" width="" height="" alt="">?
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Направления</a>
+            </li> 
+            <li class="site-list__item">
+              <a href="catalog.html">Попутчики</a>
+            </li> 
+            </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="login.html" class="user-list__login js-login">Авторизация</a>
+            </li>
+            </ul>
+        </div>
       </nav>
-      <h1 class="nav__title">Направления</h1>
+      <div class="page-header__contacts contacts">
+        <a class="contacts__tel" href="tel:88005558628">8 800 555-86-28</a>
+        <p class="contacts__mail">mail@htmlacademy.ru</p>
+      </div>
+      <div class="page-header__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
     </header>
-
     <main>
      <section class="about-you">
       <img src="" class="about-you__level">
