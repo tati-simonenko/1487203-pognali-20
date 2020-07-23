@@ -6,7 +6,7 @@
   </head>
 
   <body>
-  	<header class="page-header">
+  	<header class="page-header page__header">
   	  <a class="page-header__logo">
   	  	<img src="" width="" height="" alt="">?
   	  </a>
@@ -53,9 +53,82 @@
   	</header>
 
   	<main>
-  	  <section class="fellow-travelers">
-  	  	<ul class="fellow-travelers__list">
-  	  	  <li class="fellow-traveler">
+      <section class="filtration-travelers">
+        <h2 class="filtration-travelers__title">Фильтрация по странам:</h2>
+        <form>
+          <h3>Подберите<br>идеального<br>попутчика</h3>
+          <fieldset class="hobby">
+            <legend class="hobby__title">хобби</legend>
+          </fieldset>
+          <fieldset class="music">
+            <legend class="music__title">музыка</legend>
+            <section class="music__choose">
+              <ul class="music__list">
+                <li class="music__item">
+                  <input class="music__input" type="checkbox" name="">
+                  <label>Тяжелый рок</label>
+                </li>
+                <li class="music__item">
+                  <input class="music__input" type="checkbox" name="">
+                  <label>Русский рэп</label>
+                </li>
+                <li class="music__item">
+                  <input class="music__input" type="checkbox" name="">
+                  <label>Евроденс</label>
+                </li>
+              </ul>
+            </section>
+          </fieldset>
+          <fieldset class="food">
+            <legend class="food__title">еда</legend>
+          </fieldset>
+          <fieldset class="filtration-transport">
+            <legend class="filtration-transport__title">транспорт</legend>
+            <ul class="filtration-transport__list">
+              <li class="filtration-transport__item">
+                  <input type="checkbox" name="plane" id="plane" checked>
+                  <label for="plane">Авиаперелет</label>
+              </li>
+              <li class="filtration-transport__item">
+                <input type="checkbox" name="auto" id="auto">
+                <label for="auto">Автотранспорт</label>
+              </li>
+              <li class="filtration-transport__item">
+                <input type="checkbox" name="bike" id="bike">
+                <label for="bike">Велосипед</label>
+              </li>
+              <li class="filtration-transport__item">
+                <input type="checkbox" name="on-foot" id="on-foot">
+                <label for="on-foot">Пешком</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="level">
+            <legend class="level__title">Левел</legend>
+            <div class="level__filter">
+              <div class="level__controls">
+                <label for="min-level">
+                  <input type="text" name="min-price" value="30₽" id="min-level">
+                </label>
+                <label for="max-level">
+                  -<input type="text" name="max-price" value="100₽" id="max-level">
+                </label>
+              </div>
+              <div class="level-controls">
+                <div class="level-controls__scale">
+                  <div class="level-controls__bar"></div>
+                </div>  
+                <div class="level-controls__toggle level-controls__toggle--min"></div>
+                <div class="level-controls__toggle level-controls__toggle--max"></div>
+              </div>
+            </div>
+          </fieldset>
+          <button type="submit">показать</button>
+        </form>
+      </section>
+  	  <section class="fellow-traveler">
+  	  	<ul class="fellow-traveler__list">
+  	  	  <li class="fellow-traveler__item">
   	  	  	<h3 class="fellow-traveler__name">Таня <br>Фирсова</h3>
   	  	  	<img src="" class="fellow-traveler__avatar">
   	  	  	<input class="fellow-traveler__like" type="checkbox" name="like" id="like" checked>
@@ -275,4 +348,5 @@
   	  </div>
   	</footer>
   </body>
+  
 </html>
